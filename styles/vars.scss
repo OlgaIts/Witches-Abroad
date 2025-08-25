@@ -1,0 +1,42 @@
+:root {
+  /* colors */
+  --bg: #648298;
+  --primary-light: #014b6e;
+  --primary-dark: #01203c;
+  --accent: #fff4c1;
+  --hover: #c1eaff;
+  --card: #e2d3b6;
+  --white: #fff;
+  --black: #000;
+
+  /* font family*/
+  --ff-heading: 'Night Ghost', cursive;
+  --ff-text: 'GowunDodum', sans-serif;
+
+  /* Typography sizes */
+  --title-h2: 96px;
+  --title-h3: 48px;
+  --subtitle-h4: 32px;
+  --text: 18px;
+  --text-card: 14px;
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* spacing */
+  --spacing-xs: 0.4rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.6rem;
+  --spacing-lg: 2.4rem;
+  --spacing-xl: 3.2rem;
+  --spacing-xxl: 4rem;
+
+  /* Radius */
+  --radius-sm: 1rem;
+  --radius-round: 50%;
+
+  /* border */
+  --border: 2px solid var(--accent);
+  --border-card: 2px solid var(--white);
+}

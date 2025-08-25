@@ -1,0 +1,29 @@
+@use 'styles/mixins.scss' as mixin;
+@use 'styles/media.scss' as media;
+
+.component {
+  min-height: 100vh;
+  background-image: url('/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.title {
+  padding-block: 10.4rem 4rem;
+}
+
+.text {
+  width: 70rem;
+  font: var(--fw-regular) 2.4rem var(--ff-text);
+}
+
+.btn_wrapper {
+  margin-top: 10.4rem;
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+.btn {
+  width: 34rem;
+}

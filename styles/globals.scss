@@ -1,0 +1,57 @@
+@use './vars.scss';
+@use './mixins.scss';
+@use './media.scss';
+
+@font-face {
+  font-family: 'Night Ghost';
+  src: url('/fonts/Night Ghost.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GowunDodum';
+  src: url('/fonts/GowunDodum.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: var(--ff-text);
+  background-color: var(--bg);
+  color: var(--white);
+}

@@ -1,0 +1,18 @@
+@use 'styles/media.scss' as media;
+
+.xs {
+  font: var(--fw-regular) var(--subtitle-h4) var(--ff-heading);
+}
+
+.sm {
+  font: var(--fw-regular) var(--title-h3) var(--ff-heading);
+}
+
+.md,
+.lg {
+  font: var(--fw-regular) var(--title-h2) var(--ff-heading);
+}
+
+.center {
+  text-align: center;
+}
