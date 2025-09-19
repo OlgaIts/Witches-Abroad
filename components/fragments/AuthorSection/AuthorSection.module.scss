@@ -1,0 +1,20 @@
+.component {
+  margin-top: calc(var(--spacing-lg) * 6);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.img {
+    width: 46rem;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.text {
+  font: var(--fw-regular) var(--text) / 1.5 var(--ff-text);
+}
