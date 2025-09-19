@@ -1,8 +1,8 @@
+import Link from 'next/link';
 import classNames from 'classnames';
 import { Container } from '@/components/ui/Container';
-import styles from './AuthorSection.module.scss';
 import { Title } from '@/components/ui/Title';
-import Link from 'next/link';
+import styles from './AuthorSection.module.scss';
 
 interface AuthorSectionProps {
   className?: string;
@@ -44,7 +44,7 @@ export const AuthorSection = ({ className }: AuthorSectionProps) => {
               back to reality — wiser, laughing, and thinking a little more
               deeply.
             </p>
-            <Link href={'https://terrypratchett.com/'} >Read more</Link>
+            <Link href={'https://terrypratchett.com/'}>Read more</Link>
           </div>
         </div>
       </Container>

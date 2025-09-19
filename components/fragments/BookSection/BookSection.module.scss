@@ -1,0 +1,15 @@
+.component {
+  margin-top: calc(var(--spacing-lg) * 6);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(var(--spacing-xl) * 2);
+}
+
+.text {
+  padding-bottom: var(--spacing-md);
+  font: var(--fw-regular) var(--text) / 1.5 var(--ff-text);
+}
