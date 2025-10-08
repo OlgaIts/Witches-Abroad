@@ -9,7 +9,7 @@ export const Header = () => {
     <header className={styles.component}>
       <Container>
         <Nav />
-        <Title tag="h1" size="lg" className={styles.title}>
+        <Title tag="h1" size="lg" className={styles.title} titleColor="light">
           Witches Abroad
         </Title>
         <p className={styles.text}>
