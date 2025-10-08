@@ -1,75 +1,45 @@
 @use 'styles/mixins.scss' as mixin;
 
 .footer {
-  padding-block: var(--spacing-lg);
   position: relative;
-  min-height: 35rem;
-  background-image: url('/img/bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: var(--color-grey-50);
-  z-index: 1;
+  margin-top: 16rem;
+  padding-block: var(--spacing-xxl);
+  background:
+    url('/svg/spinnwebe-8.svg') no-repeat right 0px top 50%,
+    url('/svg/spinnwebe-5.svg') no-repeat left 0px bottom 0px,
+    var(--bg-quote);
 
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: #192e06;
-    opacity: 0.7;
-    z-index: -1;
-  }
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
+  font: var(--fw-regular) var(--text) var(--ff-text);
 }
 
-.container {
-  @include mixin.container;
+.sections_wrapper {
   display: flex;
   justify-content: space-between;
+  gap: var(--spacing-xl);
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  margin-bottom: var(--spacing-lg);
-  font: var(--fw-semibold) 3rem sans-serif;
-  text-transform: uppercase;
-
-  span {
-    color: var(--secondary-default);
-  }
-}
-
-.email {
-  font: var(--fw-regular) 2.4rem var(--ff-text);
-}
-
-.icons_wrapper {
-  margin-top: var(--spacing-lg);
-  display: flex;
-  gap: var(--spacing-md);
+.section {
+  width: calc(33.33% - var(--spacing-xl));
 }
 
 .title {
-  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xl);
 }
 
-.nav_list {
+.about_text {
+  padding-bottom: var(--spacing-xl);
+}
+
+.text {
+  padding-top: calc(var(--spacing-xl) * 2);
+  width: fit-content;
+  margin-left: auto;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
-}
-
-.nav_item {
-  font: var(--fw-semibold) 1.8rem var(--ff-text);
-  text-transform: uppercase;
-}
-
-.copyright {
-  margin-top: calc(var(--spacing-xl) * 2);
-  font: var(--fw-regular) 1.4rem var(--ff-text);
-  color: var(--color-grey-400);
 }
