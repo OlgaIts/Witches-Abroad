@@ -1,0 +1,40 @@
+.heading {
+  padding-bottom: var(--spacing-xxl);
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 9.6rem;
+}
+
+.article_ogg {
+  padding-top: 12rem;
+  padding-bottom: 13.6rem;
+  grid-template-columns: 1fr 35%;
+  gap: var(--spacing-xxl);
+}
+
+.subtitle_text {
+  padding-bottom: calc(var(--spacing-lg) * 2);
+}
+
+.subtitle {
+  padding-bottom: var(--spacing-md);
+}
+
+.text {
+  font: var(--fw-regular) 1.8rem var(--ff-text);
+
+  span {
+    display: inline;
+  }
+}
+.quote_text {
+  display: block;
+  quotes: '' '';
+}
+
+.quote_text_wrapper {
+  width: 85%;
+}

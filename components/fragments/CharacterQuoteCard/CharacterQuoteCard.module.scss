@@ -1,0 +1,36 @@
+.quote_wrapper {
+  position: relative;
+}
+
+.quote {
+  position: relative;
+  padding: var(--spacing-xl);
+  font: var(--fw-regular) 1.8rem var(--ff-text);
+  background-color: var(--bg-quote);
+  border: 2px solid var(--white);
+  border-radius: var(--radius-sm);
+}
+
+.spinnwebe {
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+}
+
+.quote_top {
+  position: absolute;
+  top: -4.5rem;
+  left: -4.5rem;
+}
+
+.quote_bottom {
+  position: absolute;
+  right: -4.5rem;
+  bottom: -4rem;
+}
+
+.spinnen {
+  position: absolute;
+  bottom: -12rem;
+  left: 1rem;
+}
