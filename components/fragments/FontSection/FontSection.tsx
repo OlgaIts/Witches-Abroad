@@ -17,7 +17,7 @@ export const FontSection = ({ className }: FontSectionProps) => {
         in accordance with their respective licenses.
       </p>
       <div className={styles.wrapper}>
-        <ul className={styles.list}>
+        <ul className={styles.list} role="list">
           <li className={styles.list_item}>
             Night Ghost - ®Afika Studio 2021 - used under a commercial license.
           </li>

@@ -3,6 +3,7 @@ import { Header } from '@/components/fragments/Header/Header';
 import { AuthorSection } from '@/components/fragments/AuthorSection';
 import { BookSection } from '@/components/fragments/BookSection';
 import { Characters } from '@/components/fragments/Caracters/Characters';
+import { SeriesSection } from '@/components/fragments/SeriesSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <AuthorSection />
           {/* <BookSection />
           <Characters /> */}
+          <SeriesSection />
         </Container>
       </main>
     </>
