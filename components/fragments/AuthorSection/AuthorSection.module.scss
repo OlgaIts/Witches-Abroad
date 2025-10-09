@@ -3,18 +3,23 @@
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
 }
 
 .img {
-    width: 46rem;
-  border-radius: 10px;
+  width: 46rem;
+  border-radius: var(--radius-sm);
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
 .text {
   font: var(--fw-regular) var(--text) / 1.5 var(--ff-text);
+}
+
+.link {
+  padding-top: var(--spacing-xl);
+  font-size: 2rem;
 }

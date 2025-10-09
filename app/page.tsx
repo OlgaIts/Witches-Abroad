@@ -12,8 +12,8 @@ export default function Home() {
       <main>
         <Container>
           <AuthorSection />
-          {/* <BookSection />
-          <Characters /> */}
+          <BookSection />
+          <Characters />
           <SeriesSection />
         </Container>
       </main>
