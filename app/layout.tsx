@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import '../styles/globals.scss';
 import { Footer } from '@/components/fragments/Footer';
+import '../styles/globals.scss';
 
 export const metadata: Metadata = {
   title: 'Witches Abroad — Fan Project | Terry Pratchett Discworld Tribute',
@@ -31,8 +31,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        {children}
-        <Footer />
+        <div className="layout">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

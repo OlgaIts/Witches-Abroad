@@ -1,0 +1,19 @@
+.component {
+  min-height: 73rem;
+  background-image: url('/img/credits-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.wrapper {
+  margin-left: auto;
+  padding-top: 30rem;
+  width: 50%;
+  font: var(--fw-regular) var(--text) var(--ff-text);
+}
+
+.title {
+  padding-bottom: var(--spacing-md);
+}
+

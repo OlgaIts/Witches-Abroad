@@ -1,0 +1,1 @@
+export { CreditsHeader } from './CreditsHeader';
