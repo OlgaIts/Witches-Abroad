@@ -3,6 +3,13 @@
   font: var(--fw-regular) var(--text) var(--ff-text);
 }
 
+.text {
+  margin: auto;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-xxl);
+  width: 50%;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -28,33 +35,5 @@
     height: 3rem;
     background-image: url('/svg/list-item-star.svg');
     background-repeat: no-repeat;
-  }
-}
-
-.sub_item {
-  position: relative;
-  padding-left: var(--spacing-md);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 13px;
-    left: 6px;
-    width: 0.4rem;
-    height: 0.4rem;
-    background-color: var(--white);
-    border-radius: var(--radius-round);
-  }
-}
-
-.link {
-  display: inline-block;
-  padding-left: var(--spacing-xs);
-  padding-right: var(--spacing-xs);
-  color: var(--accent);
-  transition: color 0.3s ease-in-out;
-
-  &:hover {
-    color: var(--hover);
   }
 }
