@@ -1,3 +1,4 @@
+import { Btn } from '@/components/ui/Btn/Btn';
 import { Button } from '../../ui/Button';
 import { Container } from '../../ui/Container';
 import { Nav } from '../../ui/Nav/Nav';
@@ -19,7 +20,7 @@ export const Header = () => {
           they need?”
         </p>
         <div className={styles.btn_wrapper}>
-          <Button className={styles.btn}>Buy Now</Button>
+          <Btn className={styles.btn}>Buy Now</Btn>
           <Button btnStyle="outlined" className={styles.btn}>
             Download Free Sample
           </Button>
