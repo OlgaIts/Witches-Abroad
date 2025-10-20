@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Title } from '@/components/ui/Title';
-import { CharacterQuoteCard } from '../CharacterQuoteCard/CharacterQuoteCard';
+import { QuoteCard } from '../QuoteCard/QuoteCard/QuoteCard';
 import styles from './Characters.module.scss';
 
 export const Characters = () => {
@@ -43,7 +43,7 @@ export const Characters = () => {
             </p>
           </div>
 
-          <CharacterQuoteCard>
+          <QuoteCard>
             <p className={styles.text}>
               Granny Weatherwax looked out at the multi-layered, silvery world.
             </p>
@@ -65,7 +65,12 @@ export const Characters = () => {
             <q className={styles.quote_text}>“NO.”</q>
             <p className={styles.text}>Granny looked down at herself.</p>
             <q className={styles.quote_text}>“This one,” she said.</q>
-          </CharacterQuoteCard>
+            <img
+              src="/svg/spinnwebe-6.svg"
+              alt="spider web with spider"
+              className={styles.spinnwebe}
+            />
+          </QuoteCard>
         </div>
       </article>
 
@@ -98,7 +103,7 @@ export const Characters = () => {
             </p>
           </div>
 
-          <CharacterQuoteCard>
+          <QuoteCard>
             <div className={styles.quote_text_wrapper}>
               <q className={styles.quote_text}>
                 “It wasn`t gambling!” snapped Nanny. “I never gamble! They were
@@ -136,7 +141,12 @@ export const Characters = () => {
                 sense.”
               </q>
             </div>
-          </CharacterQuoteCard>
+            <img
+              src="/svg/spinnwebe-6.svg"
+              alt="spider web with spider"
+              className={styles.spinnwebe}
+            />
+          </QuoteCard>
         </div>
 
         <img
@@ -177,7 +187,7 @@ export const Characters = () => {
             </p>
           </div>
 
-          <CharacterQuoteCard>
+          <QuoteCard>
             <div className={styles.quote_text_wrapper}>
               <p className={styles.text}>
                 “What might be called the classical witch comes in two basic
@@ -196,7 +206,12 @@ export const Characters = () => {
                 cut bread.”
               </p>
             </div>
-          </CharacterQuoteCard>
+            <img
+              src="/svg/spinnwebe-6.svg"
+              alt="spider web with spider"
+              className={styles.spinnwebe}
+            />
+          </QuoteCard>
         </div>
       </article>
     </section>

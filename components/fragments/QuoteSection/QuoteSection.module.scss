@@ -1,0 +1,15 @@
+.text {
+  padding-bottom: var(--spacing-xl);
+}
+
+.spinnwebe {
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  gap: var(--spacing-xl);
+}

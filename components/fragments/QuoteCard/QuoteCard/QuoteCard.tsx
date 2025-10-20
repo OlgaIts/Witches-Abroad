@@ -1,25 +1,17 @@
 import { ReactNode } from 'react';
 import classNames from 'classnames';
-import styles from './CharacterQuoteCard.module.scss';
+import styles from './QuoteCard.module.scss';
 
-interface CharacterQuoteCardProps {
+interface QuoteCardProps {
   className?: string;
   children: ReactNode;
 }
 
-export const CharacterQuoteCard = ({
-  className,
-  children,
-}: CharacterQuoteCardProps) => {
+export const QuoteCard = ({ className, children }: QuoteCardProps) => {
   return (
     <div className={classNames(styles.quote_wrapper, className)}>
       <blockquote cite="" className={styles.quote}>
         {children}
-        <img
-          src="/svg/spinnwebe-6.svg"
-          alt="spider web with spider"
-          className={styles.spinnwebe}
-        />
         <img
           src="/svg/quote crystal.svg"
           alt="two crystals"
