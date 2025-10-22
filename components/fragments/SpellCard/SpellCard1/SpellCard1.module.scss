@@ -1,0 +1,26 @@
+.component {
+  position: relative;
+  padding: var(--spacing-xl);
+  width: 50%;
+  background-color: var(--card);
+  font: var(--fw-regular) var(--text-card) var(--ff-text);
+  color: var(--black);
+}
+
+.wrapper {
+  display: flex;
+  gap: calc(var(--spacing-xl) * 2);
+  font-size: var(--text);
+}
+
+.title {
+  padding-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  padding-bottom: var(--spacing-md);
+}
+
+.section {
+  padding-bottom: var(--spacing-xl);
+}

@@ -5,6 +5,7 @@ import { BookSection } from '@/components/fragments/BookSection';
 import { Characters } from '@/components/fragments/Caracters/Characters';
 import { SeriesSection } from '@/components/fragments/SeriesSection';
 import { QuoteSection } from '@/components/fragments/QuoteSection';
+import { SpellsSection } from '@/components/fragments/SpellsSection';
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
         <Container>
           {/* <AuthorSection />
           <BookSection /> */}
-          <Characters />
+          {/* <Characters /> */}
           {/* <SeriesSection /> */}
-          <QuoteSection />
+          {/* <QuoteSection /> */}
+          <SpellsSection />
         </Container>
       </main>
     </>

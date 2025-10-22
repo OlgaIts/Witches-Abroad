@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.number_item {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.number {
+  font: var(--fw-regular) 1.6rem var(--ff-heading);
+}
