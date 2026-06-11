@@ -1,10 +1,27 @@
 .component {
   position: relative;
+  margin-top: 80px;
   padding: var(--spacing-xl);
   width: 50%;
   background-color: var(--card);
+  background-image: url('/svg/mushrooms.svg');
+  background-repeat: no-repeat;
+  background-position: 88% 30%;
   font: var(--fw-regular) var(--text-card) var(--ff-text);
   color: var(--black);
+  transform: rotate(-13deg);
+  transform-origin: 50% 0%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/svg/feather.svg');
+    background-repeat: no-repeat;
+    background-position: 96% 60%;
+    background-size: 4rem;
+    transform: rotate(43deg);
+  }
 }
 
 .wrapper {

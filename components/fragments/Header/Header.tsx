@@ -20,9 +20,9 @@ export const Header = () => {
           they need?”
         </p>
         <div className={styles.btn_wrapper}>
-          <Btn className={styles.btn}>Buy Now</Btn>
+          <Btn className={styles.btn}>Meet the Witches</Btn>
           <Button btnStyle="outlined" className={styles.btn}>
-            Download Free Sample
+            Read a Sample
           </Button>
         </div>
       </Container>

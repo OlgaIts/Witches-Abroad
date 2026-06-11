@@ -14,3 +14,31 @@
   white-space: nowrap;
   width: 1px;
 }
+
+// animation
+@mixin fadeIn(
+  $duration: 1s,
+  $delay: 0s,
+  $easing: linear,
+  $fill: both,
+  $loop: infinite
+) {
+  animation-name: fadeIn;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $easing;
+  animation-fill-mode: $fill;
+  animation-iteration-count: $loop;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

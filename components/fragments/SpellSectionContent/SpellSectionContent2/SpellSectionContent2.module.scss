@@ -1,0 +1,36 @@
+@use 'styles/mixins.scss' as mixin;
+
+.component {
+  display: flex;
+}
+
+.img_wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.img_absinthe,
+.img_bull,
+.img_bagel_1,
+.img_star_1,
+.img_star_2,
+.img_star_3 {
+  position: absolute;
+}
+
+.img_absinthe {
+  top: 3rem;
+  right: 18%;
+  transform: rotate(330deg) scale(0.7);
+  transform-origin: 50% 50%;
+}
+
+.img_bull {
+  bottom: 0;
+  left: 0;
+}
+
+.img_star_1 {
+  top: 24%;
+  left: 40%;
+}

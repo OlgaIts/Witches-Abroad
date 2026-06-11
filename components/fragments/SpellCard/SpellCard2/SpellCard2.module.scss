@@ -1,0 +1,51 @@
+.component {
+  position: relative;
+  padding: var(--spacing-xl);
+  width: 50%;
+  background-color: var(--card);
+  background-image: url('/svg/plant twig.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 17%;
+  font: var(--fw-regular) var(--text-card) var(--ff-text);
+  color: var(--black);
+  transform: rotate(11deg);
+  transform-origin: 0% 50%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/svg/plant twig.svg');
+    background-repeat: no-repeat;
+    background-position: 16% 35%;
+    transform: rotateY(-180deg) scale(1);
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: calc(var(--spacing-xl) * 2);
+  font-size: var(--text);
+}
+
+.title {
+  padding-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  padding-bottom: var(--spacing-md);
+}
+
+.ingredients {
+  padding-top: 40px;
+}
+
+.section {
+  padding-bottom: var(--spacing-xl);
+}
+
+.bottle {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+}

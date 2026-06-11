@@ -14,11 +14,11 @@ export default function Home() {
       <main>
         <Container>
           {/* <AuthorSection />
-          <BookSection /> */}
-          {/* <Characters /> */}
-          {/* <SeriesSection /> */}
-          {/* <QuoteSection /> */}
+          <BookSection />
+          <Characters />
+          <QuoteSection /> */}
           <SpellsSection />
+          {/* <SeriesSection /> */}
         </Container>
       </main>
     </>
