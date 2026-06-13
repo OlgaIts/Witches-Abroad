@@ -2,6 +2,10 @@
 
 .xs {
   font: var(--fw-regular) var(--subtitle-h4) var(--ff-heading);
+
+  @include m.sm() {
+    font-size: 2.4rem;
+  }
 }
 
 .sm {

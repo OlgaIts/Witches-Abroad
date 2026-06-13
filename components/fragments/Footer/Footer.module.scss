@@ -1,9 +1,9 @@
-@use 'styles/mixins.scss' as mixin;
+@use 'styles/mixins.scss' as m;
 
 .footer {
   position: relative;
   margin-top: 16rem;
-  padding-block: var(--spacing-xxl);
+  padding-block: var(--spacing-xxl) var(--spacing-md);
   background:
     url('/svg/spinnwebe-8.svg') no-repeat right 0px top 50%,
     url('/svg/spinnwebe-5.svg') no-repeat left 0px bottom 0px,
@@ -12,34 +12,103 @@
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);
   font: var(--fw-regular) var(--text) var(--ff-text);
+
+  @include m.xl() {
+    font-size: 1.6rem;
+  }
+  @include m.md() {
+    background-position:
+      right 0px top 70%,
+      left 0px bottom 0px;
+    background-size:
+      auto,
+      100px auto;
+  }
+  @include m.sm() {
+    font-size: 1.4rem;
+  }
 }
 
 .sections_wrapper {
   display: flex;
   justify-content: space-between;
   gap: var(--spacing-xl);
+
+  @include m.xl() {
+    flex-wrap: wrap;
+  }
+  @include m.md() {
+    flex-direction: column;
+    gap: 4var (--spacing-sm);
+  }
 }
 
 .section {
   width: calc(33.33% - var(--spacing-xl));
+
+  @include m.xl() {
+    width: calc(50% - var(--spacing-xl));
+  }
+  @include m.md() {
+    width: 100%;
+  }
+}
+
+.section_dis {
+  @include m.xl() {
+    margin: auto;
+    margin-top: var(--spacing-xxl);
+    justify-items: center;
+  }
+  @include m.md() {
+    margin: 0;
+    justify-items: start;
+  }
 }
 
 .title {
   padding-bottom: var(--spacing-xl);
+
+  @include m.xl() {
+    padding-bottom: var(--spacing-lg);
+  }
+  @include m.md() {
+    padding-bottom: var(--spacing-sm);
+  }
 }
 
 .about_text {
   padding-bottom: var(--spacing-xl);
+  @include m.xl() {
+    padding-bottom: var(--spacing-lg);
+  }
+  @include m.md() {
+    padding-bottom: var(--spacing-sm);
+  }
 }
 
 .text {
   padding-top: calc(var(--spacing-xl) * 2);
   width: fit-content;
   margin-left: auto;
+
+  @include m.xl() {
+    font-size: 1.6rem;
+  }
+  @include m.md() {
+    width: 70%;
+    margin-left: auto;
+    text-align: end;
+    font-size: 1.4rem;
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
+
+  @include m.md() {
+    gap: var(--spacing-sm);
+  }
 }

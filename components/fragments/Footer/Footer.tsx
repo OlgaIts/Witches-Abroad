@@ -18,7 +18,7 @@ export const Footer = ({ className }: FooterProps) => {
         <div className={styles.sections_wrapper}>
           <section className={styles.section}>
             <Title
-              size="sm"
+              size="xs"
               tag="h3"
               titleColor="accent"
               className={styles.title}
@@ -38,7 +38,7 @@ export const Footer = ({ className }: FooterProps) => {
 
           <section className={styles.section}>
             <Title
-              size="sm"
+              size="xs"
               tag="h3"
               titleColor="accent"
               className={styles.title}
@@ -61,9 +61,9 @@ export const Footer = ({ className }: FooterProps) => {
             </div>
           </section>
 
-          <section className={styles.section}>
+          <section className={classNames(styles.section, styles.section_dis)}>
             <Title
-              size="sm"
+              size="xs"
               tag="h3"
               titleColor="accent"
               className={styles.title}
@@ -75,12 +75,6 @@ export const Footer = ({ className }: FooterProps) => {
               <LinkWithIcon
                 href=""
                 linkText="Contact"
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-              <LinkWithIcon
-                href=""
-                linkText="Portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
               />
