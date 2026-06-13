@@ -8,22 +8,24 @@ import styles from './Header.module.scss';
 export const Header = () => {
   return (
     <header className={styles.component}>
-      <Container>
+      <Container className={styles.container}>
         <Nav />
-        <Title tag="h1" size="lg" className={styles.title} titleColor="light">
-          Witches Abroad
-        </Title>
-        <p className={styles.text}>
-          “It's a big responsibility, fairy godmothering. Knowing when to stop,
-          I mean. People whose wishes get granted often don't turn out to be
-          very nice people. So should you give them what they want — or what
-          they need?”
-        </p>
-        <div className={styles.btn_wrapper}>
-          <Btn className={styles.btn}>Meet the Witches</Btn>
-          <Button btnStyle="outlined" className={styles.btn}>
-            Read a Sample
-          </Button>
+        <div className={styles.content_wrapper}>
+          <Title tag="h1" size="lg" className={styles.title} titleColor="light">
+            Witches Abroad
+          </Title>
+          <p className={styles.text}>
+            “It's a big responsibility, fairy godmothering. Knowing when to
+            stop, I mean. People whose wishes get granted often don't turn out
+            to be very nice people. So should you give them what they want — or
+            what they need?”
+          </p>
+          <div className={styles.btn_wrapper}>
+            <Btn className={styles.btn}>Meet the Witches</Btn>
+            <Button btnStyle="outlined" className={styles.btn}>
+              Read a Sample
+            </Button>
+          </div>
         </div>
       </Container>
     </header>

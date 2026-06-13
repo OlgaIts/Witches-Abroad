@@ -4,6 +4,41 @@
   width: calc(100% - 40px);
 }
 
+@mixin xs() {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media (max-width: 939px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin xxl() {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
 //Скрытие элементов с учетом доступности и поисковых роботов
 @mixin visually-hidden {
   clip: rect(0 0 0 0);

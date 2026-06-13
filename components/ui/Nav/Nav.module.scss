@@ -1,8 +1,7 @@
-@use 'styles/mixins.scss' as mixin;
-@use 'styles/media.scss' as media;
+@use 'styles/mixins.scss' as m;
 
 .wrapper {
-  padding-top: var(--spacing-lg);
+  padding-top: var(--spacing-xl);
   display: flex;
   justify-content: space-between;
   align-items: center;

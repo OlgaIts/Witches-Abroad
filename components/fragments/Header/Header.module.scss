@@ -1,5 +1,4 @@
 @use 'styles/mixins.scss' as m;
-@use 'styles/media.scss' as media;
 
 .component {
   min-height: 100vh;
@@ -7,23 +6,66 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+
+  @include m.xl() {
+    background-position: 70%;
+  }
+  @include m.md() {
+    background-position: 75%;
+  }
+}
+
+.container {
+  @include m.md() {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.content_wrapper {
+  @include m.md() {
+    margin-top: auto;
+    padding-bottom: 5.6rem;
+  }
 }
 
 .title {
   padding-block: 10.4rem var(--spacing-xxl);
+  @include m.md() {
+    padding-block: 0 var(--spacing-sm);
+  }
 }
 
 .text {
   width: 70rem;
   font: var(--fw-regular) 2.4rem var(--ff-text);
+
+  @include m.xl() {
+    width: 60%;
+    font-size: 2rem;
+  }
+  @include m.md() {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 }
 
 .btn_wrapper {
   margin-top: 10.4rem;
   display: flex;
   gap: var(--spacing-xl);
+
+  @include m.md() {
+    margin-top: 4.8rem;
+    flex-direction: column;
+  }
 }
 
 .btn {
   width: 34rem;
+
+  @include m.md() {
+    width: 100%;
+  }
 }

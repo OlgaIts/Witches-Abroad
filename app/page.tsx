@@ -13,11 +13,12 @@ export default function Home() {
       <Header />
       <main>
         <Container>
-          {/* <AuthorSection />
-          <BookSection />
+          aaa
+          {/* <AuthorSection /> */}
+          {/* <BookSection />
           <Characters />
           <QuoteSection /> */}
-          <SpellsSection />
+          {/* <SpellsSection /> */}
           {/* <SeriesSection /> */}
         </Container>
       </main>
